@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="{{ url_for('static', filename='img/grape.png') }}" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>UAS PBO</title>
+  </head>
+
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="container">
+          <div class="box-navbar">
+            <div class="logo">
+              <h1>Klasifikasi</h1>
+            </div>
+            <ul class="menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#daun">Leaf Grape</a></li>
+              <li class="active"><a href="{{ url_for('home') }}">Klasifikasi</a></li>
+              <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+            <i class="fa-solid fa-bars menu-bar"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="container">
+          <div class="box-hero">
+            <div class="box">
+              <h1>
+                Klasifikasi Jenis Daun Anggur 
+              </h1>
+              <p>Selamat Datang Di Klasifikasi Jenis Daun Anggur</p>
+              <button>Selengkapnya</button>
+            </div>
+            <div class="box">
+              <img src="static/img/home.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="about" id="about">
+      <div class="container">
+        <div class="box-about">
+          <div class="box">
+            <i class="fas fa-leaf"></i>
+            <h4>Daun Anggur</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-certificate"></i>
+            <h4>Pengertian</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="box">
+            <i class="fas fa-landmark"></i>
+            <h4>Mitra</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="daun" id="daun">
+      <div class="container">
+        <div class="box-daun">
+          <div class="box">
+            <img src="static/img/auxe.JPEG" alt="" />
+            <h3>Auxerrois</h3>
+            <p>Auxerrois adalah varietas anggur putih, di wilayah Alsace di Prancis.</p>
+            <button>Detail</button>
+          </div>
+          <div class="box">
+            <img src="static/img/cabfranc.JPEG" alt="" />
+            <h3>Cabernet Franc</h3>
+            <p>Cabernet Franc adalah varietas anggur merah digunakan sebagai varietas campuran</p>
+            <button>Detail</button>
+          </div>
+          <div class="box">
+            <img src="static/img/cabsau.JPEG" alt="" />
+            <h3>Cabernet Sauvignon</h3>
+            <p>Cabernet Sauvignon adalah salah satu varietas anggur merah yang paling terkenal</p>
+            <button>Detail</button>
+          </div>
+          <div class="box">
+            <img src="static/img/chardonay.JPEG" alt="" />
+            <h3>Chardonnay</h3>
+            <p>Chardonnay adalah salah satu varietas anggur putih paling terkenal dan populer di dunia.</p>
+            <button>Detail</button>
+          </div>
+          <div class="box">
+            <img src="static/img/merlot.JPEG" alt="" />
+            <h3>Merlot</h3>
+            <p>Merlot adalah varietas anggur merah yang sangat populer dan banyak ditanam di seluruh dunia.</p>
+            <button>Detail</button>
+          </div>
+          <div class="box">
+            <img src="static/img/muller.JPEG" alt="" />
+            <h3>Muller Thurgau</h3>
+            <p>Müller-Thurgau adalah varietas anggur putih yang sering digunakan untuk membuat anggur putih yang ringan</p>
+            <button>Detail</button>
+          </div>
+          <div class="box">
+            <img src="static/img/pinot.JPEG" alt="" />
+            <h3>Pinot Noir</h3>
+            <p>
+              Pinot Noir adalah varietas anggur merah yang dihargai karena menghasilkan anggur yang elegan</p>
+            <button>Detail</button>
+          </div>
+          <div class="box">
+            <img src="static/img/riesling.JPEG" alt="" />
+            <h3>Riesling</h3>
+            <p>Riesling adalah varietas anggur putih yang sangat dihargai dan ditanam di berbagai wilayah di seluruh dunia</p>
+            <button>Detail</button>
+          </div>
+          <div class="box">
+            <img src="static/img/sauvblan.JPEG" alt="" />
+            <h3>Sauvignon Blanc</h3>
+            <p>Sauvignon Blanc adalah varietas anggur putih yang terkenal dengan keasamannya yang tajam dan karakteristik buah-buahan yang segar.</p>
+            <button>Detail</button>
+          </div>
+          <div class="box">
+            <img src="static/img/syrah.JPEG" alt="" />
+            <h3>Syrah</h3>
+            <p>Syrah adalah varietas anggur merah </p>
+            <button>Detail</button>
+          </div>
+          <div class="box">
+            <img src="static/img/tempranillo.JPEG" alt="" />
+            <h3>Tempranillo</h3>
+            <p>Tempranillo adalah varietas anggur merah yang berasal dari Spanyol</p>
+            <button>Detail</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="box-footer">
+          <div class="box">
+            <h4>Footer</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+  </body>
+</html>

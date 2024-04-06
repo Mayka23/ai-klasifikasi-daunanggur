@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='img/grape.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>UAS PBO</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="{{ url_for('static',filename='img/grape.png') }}"
+                    alt="anggur" height="60" width="60">
+                    <h2>Klasifikasi</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="{{ url_for('dashboard') }}">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="{{ url_for('pengguna') }}">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>User</h3>
+                </a>
+                <a href="{{ url_for('data') }}">
+                    <span class="material-icons-sharp">
+                        poll
+                    </span>
+                    <h3>Prediksi</h3>
+                </a>
+            
+                <a href="{{ url_for('logout') }}">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Dashboard</h1>
+            <div class="home">
+                <div class="home-info">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Selamat Datang Pada Bagian Admin</h3>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Admin</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="{{ url_for('static',filename='img/avatar4.png') }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/orders.js"></script>
+    <script src="static/index.js"></script>
+</body>
+
+</html>
